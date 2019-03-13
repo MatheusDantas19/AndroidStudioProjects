@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="anotacoes.cursoandroid.com.anotacoes.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="@+id/textoId"
+        app:layout_constraintStart_toStartOf="@+id/textoId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textoId"
+        android:layout_width="320dp"
+        android:layout_height="210dp"
+        android:background="@drawable/fundo_anotacao"
+        android:gravity="start"
+        android:paddingLeft="35dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/botaoSalvarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botao_salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textoId"
+        app:layout_constraintRight_toRightOf="@+id/textoId" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:editable="false"
+        android:gravity="center"
+        android:text="&quot;Sua luta não termina quando sentir cansaço, mas sim quando atingir o sucesso tão merecido.&quot;"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoId" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By M.I"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#2dcadb"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoSalvarId"
+        app:layout_constraintEnd_toEndOf="@+id/textoId"
+        app:layout_constraintRight_toRightOf="@+id/textoId" />
+
+</android.support.constraint.ConstraintLayout>

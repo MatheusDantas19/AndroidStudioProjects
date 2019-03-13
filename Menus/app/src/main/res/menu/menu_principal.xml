@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/salvarId"
+        android:title="Salvar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_save_branco_24dp"/>
+    <item
+        android:id="@+id/editarId"
+        android:title="Editar" />
+    <item
+        android:id="@+id/configuracoesId"
+        android:title="Configutações" />
+</menu>

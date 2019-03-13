@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="gasolinaoualcool.cursoandroid.com.gasolinaoualcool.MainActivity"
+    android:background="#94bd31">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Preço Alcool"
+        android:id="@+id/textView"
+        android:layout_marginTop="41dp"
+        android:textColor="#414c00"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Preço Gasolina"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:textColor="#414c00" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/caixaAlcoolId"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/caixaGasolinaId"
+        android:layout_alignBottom="@+id/caixaAlcoolId"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        android:id="@+id/botaoVerificarId"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/caixaAlcoolId"
+        android:layout_alignLeft="@+id/caixaAlcoolId"
+        android:layout_alignStart="@+id/caixaAlcoolId"
+        android:layout_alignRight="@+id/caixaGasolinaId"
+        android:layout_alignEnd="@+id/caixaGasolinaId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/resultadoId"
+        android:layout_below="@+id/botaoVerificarId"
+        android:layout_alignLeft="@+id/botaoVerificarId"
+        android:layout_alignStart="@+id/botaoVerificarId"
+        android:layout_marginTop="31dp"
+        android:layout_alignRight="@+id/botaoVerificarId"
+        android:layout_alignEnd="@+id/botaoVerificarId" />
+</RelativeLayout>

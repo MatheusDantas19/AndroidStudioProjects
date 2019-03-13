@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/principal"
+            android:icon="@drawable/ic_principal_24dp"
+            android:title="Principal" />
+        <item
+            android:id="@+id/servicos"
+            android:icon="@drawable/ic_servicos_24dp"
+            android:title="Servicos" />
+        <item
+            android:id="@+id/clientes"
+            android:icon="@drawable/ic_clientes_24dp"
+            android:title="Clientes" />
+    </group>
+
+    <item android:title="Comunicacao">
+        <menu>
+            <item
+                android:id="@+id/contato"
+                android:icon="@drawable/ic_email_cinza_24dp"
+                android:title="Contato" />
+            <item
+                android:id="@+id/sobre"
+                android:icon="@drawable/ic_sobre_24dp"
+                android:title="Sobre" />
+        </menu>
+    </item>
+
+</menu>
